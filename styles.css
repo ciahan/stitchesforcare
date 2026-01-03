@@ -45,7 +45,7 @@ a{color:inherit;}
 }
 
 .hero{
-  padding:36px 0;
+  padding:40px 0 32px;
   background: linear-gradient(180deg, rgba(143,175,159,.22), rgba(250,247,242,0));
 }
 .hero h1{margin:0 0 8px; font-size:38px; letter-spacing:.2px;}
