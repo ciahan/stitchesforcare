@@ -1,0 +1,1 @@
+Optional: add hero.jpg here to show a hero image on the Home page.
