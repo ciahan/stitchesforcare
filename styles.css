@@ -49,7 +49,6 @@ a{color:inherit;}
   background: linear-gradient(180deg, rgba(143,175,159,.22), rgba(250,247,242,0));
 }
 .hero h1{margin:0 0 8px; font-size:38px; letter-spacing:.2px;}
-/*.hero p{margin:0; max-width:62ch; color:var(--muted); font-size:16px;}*/
 .hero p{margin:0; color:var(--muted); font-weight:800; font-size:16px;}
 .hero .ctaRow{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;}
 .btn{
@@ -112,7 +111,7 @@ a{color:inherit;}
   padding-left:18px;
   color:var(--muted);
 }
-.kicker{color:#2d4c3f; font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase;}
+.kicker{color:#5f8f7b; font-weight:700; font-size:12px; letter-spacing:.14em; text-transform:uppercase;}
 
 .footer{
   margin-top:28px;
