@@ -66,7 +66,7 @@ a{color:inherit;}
 .section{padding:26px 0;}
 .section h2{margin:0 0 10px; font-size:22px;}
 .section p{margin:0 0 10px; color:var(--muted);}
-.section .cta {test-align: center; margin-top: 24px;}
+.cta-center {display: flex; justify-content: center; margin-top: 16px;}
 .cardGrid{
   display:grid; gap:14px;
   grid-template-columns: repeat(12, 1fr);
