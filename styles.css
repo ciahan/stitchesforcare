@@ -45,11 +45,11 @@ a{color:inherit;}
 }
 
 .hero{
-  padding:60px 0 48px;
+  padding:80px 0 64px;
   background: linear-gradient(180deg, rgba(143,175,159,.22), rgba(250,247,242,0));
 }
-.hero h1{margin:0 0 8px; font-size:44px; letter-spacing:.2px;}
-.hero p{margin:0; color:var(--muted); font-weight:800; font-size:16px;}
+.hero h1{margin:0 0 10px; font-size:50px; letter-spacing:.2px;}
+.hero p{margin:0; color:var(--muted); font-weight:800; font-size:20px;}
 .hero .ctaRow{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;}
 .btn{
   display:inline-block; text-decoration:none;
