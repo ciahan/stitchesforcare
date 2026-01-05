@@ -159,3 +159,14 @@ textarea{min-height:140px; resize:vertical;}
 }
 .hero.hasImage p{color:rgba(255,255,255,.92);}
 .hero.hasImage .kicker{color:rgba(255,255,255,.92);}
+
+.heroAbout .heroImg{
+  width: 100%;
+  max-width: 900px;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+
