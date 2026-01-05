@@ -112,7 +112,7 @@ a{color:inherit;}
   padding-left:18px;
   color:var(--muted);
 }
-.kicker{color:#5f8f7b; font-weight:700; font-size:20px; letter-spacing:.14em; text-transform:uppercase;}
+.kicker{color:#5f8f7b; font-weight:700; font-size:18px; letter-spacing:.12em; text-transform:uppercase;}
 
 .footer{
   margin-top:28px;
