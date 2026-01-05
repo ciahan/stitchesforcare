@@ -2,83 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>About | Stitches for Care</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | Stitch for Care</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="topbar">
-    <div class="container">
-      <div class="nav">
-        <a class="brand" href="index.html">
-          <strong>Stitch for Care</strong>
-          <span>Comfort • Community • Creativity</span>
-        </a>
-        <nav class="links">
-          <a href="index.html">Home</a>
-<a href="about.html" aria-current="page">About</a>
-<a href="gallery.html">Gallery</a>
-<a href="news.html">Events & News</a>
-<a href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </div>
-  </div>
 
-  <section class="hero">
+  <!-- Link your existing CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Safety fallback if styles.css fails to load */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #faf7f2;
+      color: #222;
+    }
+    a { color: inherit; text-decoration: none; }
+  </style>
+</head>
+
+<body>
+
+<!-- ===================== -->
+<!-- Top Navigation Bar -->
+<!-- ===================== -->
+<header class="topbar">
+  <div class="container nav">
+    <div class="brand">
+      <strong>Stitches for Care</strong>
+      <span class="tagline">Comfort • Community • Creativity</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="events.html">Events & News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== -->
+<!-- About Hero -->
+<!-- ===================== -->
+<section class="hero">
   <div class="container">
-    <div class="kicker">About</div>
-    <h1>Our story</h1>
+    <span class="kicker">Student-Led Initiative</span>
+    <h1>About Stitches for Care</h1>
     <p>
-      Stitch for Care began with a simple idea: when hands are busy creating,
-      hearts can be busy caring.
+      A story of creativity, compassion, and turning handmade work into meaningful service.
     </p>
   </div>
 </section>
 
+<!-- ===================== -->
+<!-- Our Story -->
+<!-- ===================== -->
 <section class="section">
-  <div class="container">
-    <div class="cardGrid">
-      <div class="card span6">
-        <h2>Why we started</h2>
-        <p>
-          We noticed that small handmade items—like a warm hat or a soft blanket—can deliver real comfort during recovery, transition, and difficult seasons. We started Stitch for Care
-          to make kindness tangible and accessible.
-        </p>
-        <p>
-          Our work is student-led and community-powered. Every stitch is a reminder that
-          someone is seen, supported, and not alone.
-        </p>
-      </div>
-      <div class="card span6">
-        <h2>What we value</h2>
-        <ul class="list">
-          <li><strong>Care:</strong> comfort first—quality and thoughtfulness in every item.</li>
-          <li><strong>Community:</strong> partner with local organizations to deliver responsibly.</li>
-          <li><strong>Creativity:</strong> use craft as a way to give back and bring people together.</li>
-          <li><strong>Consistency:</strong> small actions, repeated over time, create real impact.</li>
-        </ul>
-      </div>
+  <div class="container cardGrid">
+    <div class="card span12">
+      <h2>Our Story</h2>
+      <p>
+        Stitches for Care began with a simple idea: that handmade items can bring comfort,
+        dignity, and warmth to people facing hardship.
+      </p>
+      <p>
+        What started as one student’s passion for crochet has grown into a student-led
+        community service initiative focused on transforming creativity into measurable impact.
+      </p>
+    </div>
+  </div>
+</section>
 
-      <div class="card span12">
-        <h2>What we do</h2>
-        <ul class="list">
-          <li>Create handmade crochet items such as hats, blankets, and comfort pieces</li>
-          <li>Donate items to community organizations and individuals in need</li>
-          <li>Engage volunteers who want to give back through creativity</li>
-        </ul>
-        <p class="note">
-          Want to collaborate or suggest a recipient organization? Visit the Contact page.
-        </p>
+<!-- ===================== -->
+<!-- How It Started -->
+<!-- ===================== -->
+<section class="section">
+  <div class="container cardGrid">
+    <div class="card span12">
+      <h2>How It Started</h2>
+      <p>
+        While learning crochet as a creative outlet, the founder of Stitches for Care began
+        donating handmade items to people in need. Each piece carried not only warmth, but time,
+        care, and intention.
+      </p>
+      <p>
+        Seeing the emotional impact of these handmade gifts inspired the creation of a larger
+        effort—one that invites others to serve through making.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== -->
+<!-- Founder Section -->
+<!-- ===================== -->
+<section class="section">
+  <div class="container cardGrid">
+    <div class="card span12">
+      <h2>Meet the Founder</h2>
+
+      <!-- Optional photo -->
+      <!--
+      <img src="images/founder.jpg"
+           alt="Founder of Stitches for Care"
+           style="max-width:160px; border-radius:16px; margin-bottom:12px;">
+      -->
+
+      <p>
+        Stitches for Care is currently led by a high school student passionate about creativity,
+        leadership, and community service. Through this initiative, she aims to bring people
+        together to create comfort items for those in need.
+      </p>
+      <p>
+        While the organization is still growing, the mission is clear: to build a welcoming
+        community where volunteers of all experience levels can learn, contribute, and lead.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== -->
+<!-- Why It Matters -->
+<!-- ===================== -->
+<section class="section">
+  <div class="container cardGrid">
+    <div class="card span12">
+      <h2>Why It Matters</h2>
+      <ul class="list">
+        <li>Handmade items provide warmth, comfort, and emotional support</li>
+        <li>Students learn empathy, responsibility, and leadership</li>
+        <li>Creativity becomes a bridge between communities</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== -->
+<!-- Looking Ahead + CTA -->
+<!-- ===================== -->
+<section class="section">
+  <div class="container cardGrid">
+    <div class="card span12">
+      <h2>Looking Ahead</h2>
+      <p>
+        Stitches for Care aims to expand partnerships, welcome more student volunteers,
+        and reach more individuals in need. Every stitch moves the mission forward.
+      </p>
+
+      <div class="ctaRow">
+        <a href="contact.html" class="btn primary">Get Involved</a>
       </div>
     </div>
   </div>
 </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div>© 2026 Stitch for Care • Student-led community service initiative</div>
-    </div>
-  </footer>
+<!-- ===================== -->
+<!-- Footer -->
+<!-- ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div>© 2026 Stitches for Care • Student-led community service initiative</div>
+  </div>
+</footer>
+
 </body>
 </html>
+
