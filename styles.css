@@ -10,6 +10,7 @@
 
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
+
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:var(--bg);
@@ -20,6 +21,7 @@ body{
 a{color:inherit;}
 .container{max-width:980px;margin:0 auto;padding:0 18px;}
 
+/* Top bar */
 .topbar{
   background:var(--brand);
   color:#fff;
@@ -44,29 +46,38 @@ a{color:inherit;}
   background:rgba(255,255,255,.18);
 }
 
+/* Hero */
 .hero{
   padding:80px 0 64px;
   background: linear-gradient(180deg, rgba(143,175,159,.22), rgba(250,247,242,0));
 }
 .hero h1{margin:0 0 10px; font-size:50px; letter-spacing:.2px;}
 .hero p{margin:0; color:var(--muted); font-weight:700; font-size:18px;}
-.hero .ctaRow{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;}
-.btn{
-  display:inline-block; text-decoration:none;
-  padding:10px 14px; border-radius:12px;
-  border:1px solid var(--line);
-  background:#fff; font-weight:700; font-size:14px;
+.kicker{
+  color:#5f8f7b;
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
 }
-.btn.primary{
-  background:var(--brand);
-  color:#fff; border-color:rgba(255,255,255,.0);
-}
-.btn:hover{transform:translateY(-1px); transition:.12s ease;}
 
+/* Optional Home hero image background */
+.hero.hasImage{
+  background:
+    linear-gradient(180deg, rgba(47,47,47,.25), rgba(250,247,242,0) 70%),
+    url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color:#fff;
+}
+.hero.hasImage p{color:rgba(255,255,255,.92);}
+.hero.hasImage .kicker{color:rgba(255,255,255,.92);}
+
+/* Sections / cards */
 .section{padding:26px 0;}
 .section h2{margin:0 0 10px; font-size:22px;}
 .section p{margin:0 0 10px; color:var(--muted);}
-.ctaRow {margin-top: 48px !important;} 
+
 .cardGrid{
   display:grid; gap:14px;
   grid-template-columns: repeat(12, 1fr);
@@ -79,19 +90,57 @@ a{color:inherit;}
 }
 .card h3{margin:0 0 6px; font-size:16px;}
 .card p{margin:0; color:var(--muted); font-size:14px;}
+
 .span4{grid-column: span 4;}
 .span6{grid-column: span 6;}
 .span12{grid-column: span 12;}
 
+/* Lists */
+.list{
+  margin:10px 0 0;
+  padding-left:18px;
+  color:var(--muted);
+}
+
+/* Buttons + CTA row */
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#fff;
+  font-weight:700;
+  font-size:14px;
+}
+.btn.primary{
+  background:var(--brand);
+  color:#fff;
+  border-color:rgba(255,255,255,0);
+}
+.btn:hover{transform:translateY(-1px); transition:.12s ease;}
+
+.ctaRow{
+  margin-top:16px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+/* Badges */
 .badge{
   display:inline-block;
   padding:5px 10px;
   border-radius:999px;
   background:rgba(143,175,159,.18);
   border:1px solid rgba(143,175,159,.35);
-  font-size:12px; font-weight:700; color:#2d4c3f;
+  font-size:12px;
+  font-weight:700;
+  color:#2d4c3f;
 }
 
+/* Gallery placeholders */
 .galleryGrid{
   display:grid; gap:14px;
   grid-template-columns: repeat(12, 1fr);
@@ -107,13 +156,7 @@ a{color:inherit;}
   color:#2d4c3f; font-weight:800;
 }
 
-.list{
-  margin:10px 0 0;
-  padding-left:18px;
-  color:var(--muted);
-}
-.kicker{color:#5f8f7b; font-weight:700; font-size:14px; letter-spacing:.12em; text-transform:uppercase;}
-
+/* Footer */
 .footer{
   margin-top:28px;
   border-top:1px solid var(--line);
@@ -122,6 +165,7 @@ a{color:inherit;}
   font-size:13px;
 }
 
+/* Forms */
 .form{
   display:grid; gap:12px; max-width:640px;
 }
@@ -137,38 +181,58 @@ input, textarea{
 textarea{min-height:140px; resize:vertical;}
 .note{font-size:13px; color:var(--muted);}
 
+/* --- About page additions (Option A layout) --- */
+
+/* Image card (About page hero image in a card) */
+.cardMedia{
+  padding:0; /* image controls spacing */
+  overflow:hidden;
+}
+.mediaImg{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* Founder layout: text + square photo */
+.founderRow{
+  display:grid;
+  grid-template-columns: 1fr 220px;
+  gap:14px;
+  align-items:start;
+}
+.founderPhoto{
+  width:220px;
+  aspect-ratio: 1 / 1;
+  border-radius:16px;
+  border:1px solid var(--line);
+  overflow:hidden;
+  background:#fff;
+}
+.founderPhoto img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* Responsive */
 @media (max-width: 820px){
   .hero h1{font-size:30px;}
   .span4{grid-column: span 12;}
   .span6{grid-column: span 12;}
   .ph{grid-column: span 6;}
+
+  .founderRow{
+    grid-template-columns: 1fr;
+  }
+  .founderPhoto{
+    width:100%;
+    max-width:320px;
+  }
 }
+
 @media (max-width: 520px){
   .ph{grid-column: span 12;}
   .links a{padding:8px 8px;}
-}
-
-/* Hero image (optional): add an image file at images/hero.jpg and it will show automatically */
-.hero.hasImage{
-  background:
-    linear-gradient(180deg, rgba(47,47,47,.25), rgba(250,247,242,0) 70%),
-    url("images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  color:#fff;
-}
-.hero.hasImage p{color:rgba(255,255,255,.92);}
-.hero.hasImage .kicker{color:rgba(255,255,255,.92);}
-
-.heroAbout .heroMedia{
-  margin-top: 18px;
-}
-
-.heroAbout .heroImg{
-  width: 100%;
-  max-width: 760px;
-  height: auto;
-  display: block;
-  border-radius: 16px;
-  border: 1px solid var(--line);
 }
