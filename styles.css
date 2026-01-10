@@ -244,12 +244,16 @@ textarea{min-height:140px; resize:vertical;}
   align-items:start;
 }
 
+.eventContent{ min-width:0; }
+
 .eventImg{
   width:100%;
+  max-width:100%;
   aspect-ratio: 4 / 3;
   object-fit:cover;
   border-radius:12px;
   border:1px solid var(--line);
+  display:block;
 }
 
 .eventContent h3{
