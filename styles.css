@@ -239,8 +239,8 @@ textarea{min-height:140px; resize:vertical;}
 /* Events & News layout */
 .eventRow{
   display:grid;
-  grid-template-columns: 240px 1fr;
-  gap:16px;
+  grid-template-columns: 320px 1fr;
+  gap:20px;
   align-items:start;
 }
 
@@ -248,22 +248,34 @@ textarea{min-height:140px; resize:vertical;}
 
 .eventImg{
   width:100%;
-  max-width:100%;
-  aspect-ratio: 4 / 3;
+  /* max-width:100%; */
+  aspect-ratio: 3 / 2;
   object-fit:cover;
-  border-radius:12px;
+  border-radius:14px;
   border:1px solid var(--line);
-  display:block;
+  /* display:block; */
+}
+
+.eventCard{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
 }
 
 .eventContent h3{
   margin-top:6px;
+  margin-bottom:4px;
+}
+
+.eventContent p{
+  margin:0;
 }
 
 .eventMeta{
   font-size:13px;
   color:var(--muted);
-  margin:4px 0 8px;
+  margin:0 0 10px;
 }
 
 /* Mobile */
