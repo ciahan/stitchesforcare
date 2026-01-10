@@ -235,3 +235,36 @@ textarea{min-height:140px; resize:vertical;}
 .cardGrid > .span12 {
   margin-top: 38px;
 }
+
+/* Events & News layout */
+.eventRow{
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  gap:16px;
+  align-items:start;
+}
+
+.eventImg{
+  width:100%;
+  aspect-ratio: 4 / 3;
+  object-fit:cover;
+  border-radius:12px;
+  border:1px solid var(--line);
+}
+
+.eventContent h3{
+  margin-top:6px;
+}
+
+.eventMeta{
+  font-size:13px;
+  color:var(--muted);
+  margin:4px 0 8px;
+}
+
+/* Mobile */
+@media (max-width: 820px){
+  .eventRow{
+    grid-template-columns: 1fr;
+  }
+}
