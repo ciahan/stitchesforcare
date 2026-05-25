@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Stitches for Care</title>
+  <meta name="description" content="Contact Stitches for Care to volunteer, donate supplies, or partner with us." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,59 +15,85 @@
           <strong>Stitches for Care</strong>
           <span>Comfort • Community • Creativity</span>
         </a>
-        <nav class="links">
+        <nav class="links" aria-label="Main navigation">
           <a href="index.html">Home</a>
-<a href="gallery.html">Gallery</a>
-<a href="news.html">Events & News</a>
-<a href="contact.html" aria-current="page">Contact</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="news.html">Events & News</a>
+          <a href="contact.html" aria-current="page">Contact</a>
         </nav>
       </div>
     </div>
   </div>
 
-  <section class="hero">
-  <div class="container">
-    <div class="kicker">Contact</div>
-    <h1>Reach out</h1>
-    <p>
-      Want to volunteer, donate supplies, or partner with us? Send a message and we’ll get back to you.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="card">
-      <h2>Message form</h2>
-      <form class="form" action="mailto:info@stitchforcare.org" method="post" enctype="text/plain">
-        <div>
-          <label for="name">Your name</label>
-          <input id="name" name="name" placeholder="Full name" required />
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required />
-        </div>
-        <div>
-          <label for="topic">Topic</label>
-          <input id="topic" name="topic" placeholder="Volunteer / Donation / Partnership / Other" />
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="How can we help?"></textarea>
-        </div>
-        <div class="note">
-          This basic form uses <code>mailto:</code> (opens your email client). If you want a real form that works on GitHub Pages,
-          consider Formspree or Google Forms later.
-        </div>
-        <div>
-          <button class="btn primary" type="submit">Send</button>
-          <a class="btn" href="index.html">Back to Home</a>
-        </div>
-      </form>
+  <section class="hero subHero">
+    <div class="container">
+      <div class="kicker">Contact</div>
+      <h1>Reach out</h1>
+      <p>
+        Interested in volunteering, donating supplies, or partnering with us? We would love to hear from you.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
+
+  <main>
+    <section class="section compact">
+      <div class="container">
+        <div class="contactIntroGrid">
+          <div class="contactOption">
+            <h3>Volunteer</h3>
+            <p>Help crochet, sort supplies, prepare donations, or support community events.</p>
+          </div>
+          <div class="contactOption">
+            <h3>Donate Supplies</h3>
+            <p>Yarn, hooks, stuffing, and finished handmade items help us create more comfort.</p>
+          </div>
+          <div class="contactOption">
+            <h3>Partner With Us</h3>
+            <p>Community organizations can help connect handmade donations with people in need.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contactSection">
+      <div class="container">
+        <div class="contactLayout">
+          <div class="contactText">
+            <div class="kicker">Send a Message</div>
+            <h2>Let’s create comfort together</h2>
+            <p>
+              Use the form to share how you would like to help. You can ask about volunteering, donating supplies, partnership opportunities, or upcoming events.
+            </p>
+            <p class="note">
+              This basic form uses <code>mailto:</code>, which opens your email app. For a live hosted form, consider Formspree, Netlify Forms, or Google Forms.
+            </p>
+          </div>
+
+          <div class="contactCard">
+            <form class="form" action="mailto:info@stitchesforcare.org" method="post" enctype="text/plain">
+              <div>
+                <label for="name">Your name</label>
+                <input id="name" name="name" placeholder="Full name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div>
+                <label for="topic">Topic</label>
+                <input id="topic" name="topic" placeholder="Volunteer / Donation / Partnership / Other" />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="How would you like to get involved?"></textarea>
+              </div>
+              <button class="btn primary" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
