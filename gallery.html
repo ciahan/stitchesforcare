@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gallery | Stitches for Care</title>
+  <meta name="description" content="Explore handmade crochet blankets, scarves, heart pillows, and comfort items created by Stitches for Care." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,63 +15,90 @@
           <strong>Stitches for Care</strong>
           <span>Comfort • Community • Creativity</span>
         </a>
-        <nav class="links">
+        <nav class="links" aria-label="Main navigation">
           <a href="index.html">Home</a>
-<a href="gallery.html" aria-current="page">Gallery</a>
-<a href="news.html">Events & News</a>
-<a href="contact.html">Contact</a>
+          <a href="gallery.html" aria-current="page">Gallery</a>
+          <a href="news.html">Events & News</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
     </div>
   </div>
 
-  <section class="hero">
-  <div class="container">
-    <div class="kicker">Gallery</div>
-    <h1>Handmade with care</h1>
-    <p>
-      Each piece you see here is thoughtfully crocheted by hand, one stitch at a time. These items are created to bring comfort, 
-      warmth, and a sense of being cared for to people in our community.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="galleryGrid">
-      <div class="ph">       
-        <img src="images/Comfort1.jpg" alt="Crocheted comfort pieces" class="phImg">
-      </div>
-      <div class="ph">       
-        <img src="images/Comfort2.jpg" alt="Crocheted comfort pieces" class="phImg">
-      </div>
-      <div class="ph">       
-        <img src="images/Comfort3.jpg" alt="Crocheted comfort pieces" class="phImg">
-      </div>
-      <div class="ph">       
-        <img src="images/Blanket1.jpg" alt="Crocheted blanket" class="phImg">
-      </div>
-      <div class="ph">       
-        <img src="images/Blanket2.jpg" alt="Crocheted blanket" class="phImg">
-      </div>
-      <div class="ph">       
-        <img src="images/Blanket3.jpg" alt="Crocheted blanket" class="phImg">
-      </div>
-      <div class="ph">       
-        <img src="images/Scarf1.jpg" alt="Crocheted scarf" class="phImg">
-      </div>
-      <div class="ph">       
-        <img src="images/Scarf2.jpg" alt="Crocheted scarf" class="phImg">
-      </div>
-      <div class="ph">       
-        <img src="images/Scarf3.jpg" alt="Crocheted scarf" class="phImg">
-      </div>
-      <div class="span12 ctaRow">
-            <a href="contact.html" class="btn primary">Get Involved</a>
-      </div>
+  <section class="hero subHero">
+    <div class="container">
+      <div class="kicker">Gallery</div>
+      <h1>Handmade with care</h1>
+      <p>
+        Explore blankets, scarves, heart pillows, and comfort pieces thoughtfully crocheted one stitch at a time.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
+
+  <main>
+    <section class="section galleryFeatureSection">
+      <div class="container">
+        <div class="sectionIntro center">
+          <div class="kicker">Featured Collection</div>
+          <h2>Comfort in every stitch</h2>
+          <p>A curated look at the handmade pieces created for warmth, encouragement, and community care.</p>
+        </div>
+
+        <div class="largeGalleryStack">
+          <figure class="largeGalleryItem">
+            <img src="images/Comfort1.jpg" alt="Handmade crochet comfort pieces" />
+            <figcaption>
+              <h3>Comfort Pieces</h3>
+              <p>Soft handmade items created to bring encouragement and care.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="largeGalleryItem">
+            <img src="images/Blanket1.jpg" alt="Handmade crochet blanket" />
+            <figcaption>
+              <h3>Blankets</h3>
+              <p>Warm crochet blankets made with patience, detail, and purpose.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="largeGalleryItem">
+            <img src="images/Scarf1.jpg" alt="Handmade crochet scarf" />
+            <figcaption>
+              <h3>Scarves</h3>
+              <p>Handmade scarves designed to share warmth with people in need.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container">
+        <div class="sectionIntro center">
+          <div class="kicker">More Handmade Work</div>
+          <h2>Additional pieces</h2>
+        </div>
+        <div class="editorialGalleryGrid">
+          <figure><img src="images/Comfort2.jpg" alt="Crocheted comfort piece" /><figcaption>Comfort Pieces</figcaption></figure>
+          <figure><img src="images/Comfort3.jpg" alt="Crocheted comfort piece" /><figcaption>Comfort Pieces</figcaption></figure>
+          <figure><img src="images/Blanket2.jpg" alt="Crocheted blanket" /><figcaption>Blankets</figcaption></figure>
+          <figure><img src="images/Blanket3.jpg" alt="Crocheted blanket" /><figcaption>Blankets</figcaption></figure>
+          <figure><img src="images/Scarf2.jpg" alt="Crocheted scarf" /><figcaption>Scarves</figcaption></figure>
+          <figure><img src="images/Scarf3.jpg" alt="Crocheted scarf" /><figcaption>Scarves</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="ctaBanner">
+          <h2>Want to help us create more comfort?</h2>
+          <p>Volunteer your time, donate supplies, or partner with us to bring handmade care to more people.</p>
+          <a href="contact.html" class="btn light">Get Involved</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
