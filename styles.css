@@ -840,3 +840,23 @@ textarea{min-height:150px;resize:vertical;}
     text-align:center;
   }
 }
+/* Final contact form button alignment */
+.formCard,
+.formCard *{
+  text-align: center;
+}
+
+.formCard .formButton,
+.formCard a.formButton{
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 32px auto 0 !important;
+  padding: 18px 38px;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+}
