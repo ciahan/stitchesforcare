@@ -845,18 +845,41 @@ textarea{min-height:150px;resize:vertical;}
 .formCard *{
   text-align: center;
 }
-
-.formCard .formButton,
-.formCard a.formButton{
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  margin: 32px auto 0 !important;
-  padding: 18px 38px;
-  border-radius: 999px;
-  background: var(--brand);
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 800;
+.formCard p{
+    margin-bottom:24px;
 }
+
+.formButton{
+    margin-top:8px;
+}
+
+.formButton{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:20px 42px;
+
+    background:#ffffff;
+    color:#4F6F57;
+
+    border:3px solid #4F6F57;
+
+    border-radius:999px;
+
+    font-size:20px;
+    font-weight:800;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 24px rgba(79,111,87,.20);
+
+    transition:all .25s ease;
+}
+
+.formButton:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(79,111,87,.30);
+    background:#F7FBF7;
+}
+
