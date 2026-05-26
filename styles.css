@@ -603,7 +603,13 @@ textarea{min-height:150px;resize:vertical;}
     font-size:16px;
   }
 }
-
+.photoCaption{
+  text-align:center;
+  font-size:14px;
+  color:var(--muted);
+  marge-top:12px;
+  font-style:italic;
+}
 
 /* Final homepage simplification */
 .quoteSection{
