@@ -775,7 +775,10 @@ textarea{min-height:150px;resize:vertical;}
   border-radius:28px;
   padding:56px 36px;
 }
-
+.formButton{
+    display:inline-block;
+    margin:32px auto 0;
+}
 .formButton{
     display:inline-flex;
     align-items:center;
