@@ -802,3 +802,14 @@ textarea{min-height:150px;resize:vertical;}
 .footerLinks a:hover{
     opacity:1;
 }
+
+.copyrightFooter{
+    border-top:1px solid rgba(0,0,0,.08);
+    padding:24px 0 40px;
+}
+
+.copyrightFooter p{
+    margin:0;
+    font-size:14px;
+    color:#777;
+}
