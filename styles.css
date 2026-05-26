@@ -770,3 +770,35 @@ textarea{min-height:150px;resize:vertical;}
     min-height:1300px;
   }
 }
+
+.footer{
+    background:#4F6F57;
+    color:#fff;
+    padding:60px 20px;
+    margin-top:80px;
+}
+
+.footerContent{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.footer h3{
+    margin:0 0 12px;
+    font-size:28px;
+}
+.footerLinks{
+    margin:24px 0;
+}
+
+.footerLinks a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 14px;
+    opacity:.9;
+}
+
+.footerLinks a:hover{
+    opacity:1;
+}
