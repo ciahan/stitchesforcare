@@ -766,13 +766,22 @@ textarea{min-height:150px;resize:vertical;}
   .formCard{
     padding:24px;
   }
-  .googleForm iframe{
-    width:100%;
-    height:1000px;
-    min-height:0;
-    boarder:0;
-    display:block;
-  }
+  .googleForm{
+  width:100%;
+  max-width:900px;
+  height:900px;
+  margin:0 auto;
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.googleForm iframe{
+  width:100%;
+  height:900px !important;
+  min-height:0 !important;
+  border:0;
+  display:block;
+}
 }
 
 /* ==========================================
