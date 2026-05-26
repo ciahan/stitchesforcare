@@ -684,3 +684,44 @@ textarea{min-height:150px;resize:vertical;}
   .miniAwardGrid{grid-template-columns:1fr;}
   .quoteSection{padding:42px 0 10px;}
 }
+.centerHero{
+    text-align:center;
+}
+
+.centerHero .container{
+    max-width:800px;
+}
+
+.centerHero p{
+    max-width:700px;
+    margin:0 auto;
+}
+
+.contactCard{
+    max-width:950px;
+    margin:0 auto;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:28px;
+    padding:48px;
+}
+
+.contactCard h2{
+    text-align:center;
+    margin-top:0;
+}
+
+.contactIntro{
+    text-align:center;
+    margin-bottom:32px;
+}
+
+.formWrapper{
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.formWrapper iframe{
+    display:block;
+    border:0;
+}
